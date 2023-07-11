@@ -55,13 +55,41 @@ ol {
 
 /* Base styles */
 
-.section {}
+
+
+/* Base styles for small devices */
 
 .container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+    min-width: 320px;
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    outline: 2px solid red;
+    outline-offset: -2px;
 }
+
+/* Tablet screen */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* Desktop screen */
+@media screen and (min-width: 1158px) {
+    .container {
+        min-width: 1158px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+
 
 .visually-hidden {
     position: absolute;
@@ -316,10 +344,7 @@ text-decoration: none;
     margin-bottom: 8px;
 }
 
-.benefits-icon {}
 
-
-.benefits-title {}
 
 
 
