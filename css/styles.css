@@ -366,6 +366,10 @@ text-decoration: none;
 }
 
 
+
+/* benefits-list */
+
+
 .benefits-list {
 
 }
@@ -376,6 +380,7 @@ text-decoration: none;
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
+        
     }
 }
 
@@ -391,6 +396,8 @@ text-decoration: none;
 
 
 
+/* benefits-item */
+
 @media only screen and (max-width: 767px) {
 .benefits-item:not(:last-child) {
         margin-bottom: 72px;
@@ -398,42 +405,87 @@ text-decoration: none;
 }
 
 
-.benefits-item {
-    
-}
-
 @media only screen and (min-width: 768px) {
     .benefits-item {
        margin-bottom: 0;
-       flex-basis: calc ((100%-24px)/2);
+       width: calc ((100% - 24px) / 2);
     }
 }
 
 @media only screen and (min-width: 1158px) {
     .benefits-item {
+        flex-basis: calc((100% - 24px) / 4);
         width: 264px;
+        position: relative;
     }
 }
 
 
+/* benefits-subtitle */
+
 .benefits-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
     color: var(--main-dark-cl);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
     margin-bottom: 8px;
 }
 
+@media only screen and (min-width: 768px) {
+    .benefits-subtitle {
+        color: var(--main-dark-cl);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-align: justify;
+    }
+}
 
-.benefits-description {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--main-text-cl);
+@media only screen and (min-width: 1158px) {
+    .benefits-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--main-dark-cl);
+        margin-bottom: 8px;
+    }
 }
 
 
+
+/* Benefits description */
+
+.benefits-description {
+color: var(--main-text-cl);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.32px;
+}
+
+@media only screen and (min-width: 768px) {
+    .benefits-description{
+        color: var(--main-text-cl);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .benefits-description {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.01em;
+        color: var(--main-text-cl);
+        font-weight: 400;      
+    }
+}
 
 
 
